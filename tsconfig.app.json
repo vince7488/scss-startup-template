@@ -1,27 +1,38 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "composite": true, // Enable incremental compilation
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Store build info in a temporary location
+    "target": "ESNext", // Target modern JavaScript features
+    "lib": ["ESNext", "DOM", "DOM.Iterable"], // Include necessary type definitions
+    "module": "ESNext", // Use the latest module system
+    "jsx": "react-jsx", // Set JSX factory for React 17+
 
-    /* Bundler mode */
+    /* Bundler Mode (Adjust based on your bundler) */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false, // Allow importing .ts and .tsx files directly
+    "resolveJsonModule": true,   // Allow importing JSON modules
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    /* Linting (Consider using ESLint for more flexibility) */
+    "strict": true,              // Enable strict type checking
+    "noUnusedLocals": true,      // Warn about unused local variables
+    "noUnusedParameters": true,  // Warn about unused parameters
+    "noFallthroughCasesInSwitch": true,
+
+    /* Additional Options */
+    "esModuleInterop": true,             // Help with CommonJS/ESM interop
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming
+    "skipLibCheck": true,               // Skip type checking of declaration files (faster builds)
+
+    /* Build Output */
+    "outDir": "./dist",             // Output directory
+    "rootDir": "./src",            // Root directory of your source files
+    "declaration": true,            // Generate declaration files (.d.ts) for better tooling
+    "sourceMap": true               // Generate source maps for debugging
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"] // Exclude test files and the output directory
 }
