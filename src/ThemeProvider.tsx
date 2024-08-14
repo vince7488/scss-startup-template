@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {PaletteMode, useMediaQuery} from '@mui/material';
+import { red, blue, yellow, green } from '@mui/material/colors';
 import { createTheme, ThemeProvider, ThemeOptions } from '@mui/material/styles';
 
 const testPalette: ThemeOptions = {
@@ -16,14 +17,24 @@ const testPalette: ThemeOptions = {
       dark: '#7a0f79',
     },
     warning: {
-      main: '#ffc91e',
-      light: 'FFD34B',
-      dark: '#c79819',
+      main: yellow[500],
+      light: yellow['A400'],
+      dark: yellow[700],
     },
     error: {
-      main: '#f33113',
-      light: 'F55A42',
-      dark: '#b2220c',
+      main: red[600],
+      light: red[100],
+      dark: red[900],
+    },
+    success: {
+      main: green[500],
+      light: green[200],
+      dark: green[800],
+    },
+    info: {
+      main: blue[400],
+      light: blue[100],
+      dark: blue[800],
     },
     background: {
       default: '#ffffff',

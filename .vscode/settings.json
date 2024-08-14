@@ -3,16 +3,19 @@
     140
   ],
   "editor.indentSize": 2,
-  "editor.wordWrapColumn": 138,
-  "editor.formatOnSave": false,
+  "editor.wordWrapColumn": 140,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "wordWrapColumn",
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "trailing",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wrappingStrategy": "advanced",
   "editor.accessibilitySupport": "off",
   "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+  },
   "html.format.wrapAttributes": "auto",
   "html.format.indentHandlebars": true,
   "typescript.preferences.quoteStyle": "single",
@@ -23,57 +26,20 @@
   "files.trimTrailingWhitespace": false,
   "git.confirmSync": false,
   "scssFormatter.singleQuote": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "never"
-  },
   "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140,
-    "editor.defaultFormatter": "svipas.prettier-plus",
     "javascript.preferences.jsxAttributeCompletionStyle": "none",
     "javascript.preferences.quoteStyle": "single",
   },
   "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140,
     "typescript.autoClosingTags": false,
     "typescript.preferences.quoteStyle": "single",
     "typescript.preferences.renameMatchingJsxTags": false,
     "typescript.preferences.jsxAttributeCompletionStyle": "none",
-    "editor.defaultFormatter": "svipas.prettier-plus",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
-    },
   },
   "[typescriptreact]": {
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140,
-    "editor.inlineSuggest.enabled": true,
-    "editor.defaultFormatter": "svipas.prettier-plus",
     "typescript.preferences.quoteStyle": "single",
     "typescript.preferences.renameMatchingJsxTags": false,
     "typescript.preferences.jsxAttributeCompletionStyle": "none",
-  },
-  "[xml]": {
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140,
-    "editor.defaultFormatter": "vscode.json-language-features",
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter",
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 138,
-  },
-  "[html]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 140,
-    "editor.tabCompletion": "onlySnippets",
-    "editor.suggest.showCustomcolors": true,
-    "editor.defaultFormatter": "svipas.prettier-plus",
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"

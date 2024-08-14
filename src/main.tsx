@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import {TestThemeProvider} from './ThemeProvider.tsx';
+import App from "./App";
+import {TestThemeProvider} from './ThemeProvider';
 import "./main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

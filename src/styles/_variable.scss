@@ -13,3 +13,14 @@
 @mixin animate($prop, $timeSec, $func, $delaySec) {
   transition: $prop $timeSec $func $delaySec;
 }
+
+// colours
+
+/*
+ * SCSS colours in your project template are subjective your needs. The example here is not what you should use, but using variables will make designing much simpler and consistent.
+ * Material UIs idea of consistency must be used in the frontend Framework/library itself (see: ThemeProvider.tsx).
+ * For bootstrap,
+ */
+
+$background: hsl(15, 30%, 95%);
+$text: hsl(0, 0%, 20%);
